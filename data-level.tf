@@ -6,11 +6,12 @@ data "aws_ami" "amazon-linux-2" {
       values = [ "amzn2-ami-hvn-*-86_64-gp2",
        ]
     }
-}
     filter {
-        name = "owner-alias"
-        values = [
-            "amazon"
-        ]
+      name = "owner-alias"
+      values = [ 
+        "amazon"
+       ]
     }
+}
+    
 
